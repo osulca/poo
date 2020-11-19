@@ -3,8 +3,20 @@ class Persona{
     public $nombre;
     protected $email;
     private $telefono;
-
     const PI = 3.1416;
+
+    function __construct(string $nombre, string $email, int $telefono)
+    {
+        echo "<b>Creando objeto persona</b><br>";
+        $this->nombre = $nombre;
+        $this->email = $email;
+        $this->telefono = $telefono;
+    }
+
+/*    function __destruct()
+    {
+        echo "<b>Destruyendo objeto</b>";
+    }*/
 
     function getPi(): float
     {
@@ -32,6 +44,10 @@ class Persona{
     }
 
     function cambiarEmail(): string{
-        return "Cambiar email";
+        return "Cambiar email<br>";
+    }
+
+    static function cambiarTelefono(): string{
+        return "Cambiar Telefono<br>";
     }
 }
