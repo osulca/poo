@@ -2,6 +2,7 @@
 include_once "Persona.php";
 include_once "Empleado.php";
 include_once "Cliente.php";
+include_once "CuentaBancariaA.php";
 
 /*echo Persona::cambiarTelefono();
 echo Persona::PI;*/
@@ -20,7 +21,10 @@ echo $empleado->codigo."<br>";
 $cliente = new Cliente("Miguel", "miguelito3@gmail.com", 958657123);
 echo $cliente->cambiarEmail();
 $cliente->tarjetaPago = "1245-1578-9874-1545";
+echo $cliente->cambiarContraseña("123456");
 echo $cliente->tarjetaPago;
+
+
 
 // crear clases
 

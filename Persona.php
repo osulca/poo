@@ -50,4 +50,14 @@ class Persona{
     static function cambiarTelefono(): string{
         return "Cambiar Telefono<br>";
     }
+
+    public function cambiarContraseña(String $contraseña): bool{
+        if($contraseña=="123"){
+            return true;
+        }
+        else{
+          return false;
+        }
+    }
+
 }
